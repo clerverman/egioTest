@@ -1,0 +1,17 @@
+p.message {
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+}
+
+a.btn-warning,
+a.btn-success {
+    margin-right: 5px !important;
+    color: black !important;
+    width: 80px !important
+}
+
+a.btn-danger {
+    color: black !important;
+    width: 80px !important;
+}

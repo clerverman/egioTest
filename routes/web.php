@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\FormController ; 
+use App\Http\Controllers\MenageStatusController ;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get("/",[FormController::class,"index"]) ; 
+Route::post("/saveTestimonial",[FormController::class,"store"])->name("addTest") ; 
+Route::get("/listTestimonial",[MenageStatusController::class,"index"]) ; 
+Route::get('/changeStatus/{id}', [MenageStatusController::class,"setStatus"])->name("Changer");

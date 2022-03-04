@@ -1,0 +1,28 @@
+body,
+#titre,
+#message {
+    background-color: rgb(221, 218, 218) !important;
+}
+
+strong+span {
+    color: red;
+}
+
+textarea+span,
+input+span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+
+button {
+    color: orange !important;
+}
+
+button:hover {
+    color: white !important;
+}
+
+.formulaire {
+    max-width: 660px;
+    background-color: white !important;
+}
